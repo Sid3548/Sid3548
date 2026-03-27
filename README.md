@@ -1,10 +1,23 @@
-- 👋 Hi, I’m @Sid3548
-- 👀 I’m interested in python,c#and electrical systems.....
-- 🌱 I’m currently learning python,Deep learning.....
-- 💞️ I’m looking to collaborate on electric waste management,AI,Deep learning.....
-- 📫 How to reach me "https://www.linkedin.com/in/siddharth-j-246525201"
+# Siddharth Janapareddy
 
-<!---
-Sid3548/Sid3548 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+AI Systems Builder • Control & Automation Engineer • EE Graduate
+
+---
+
+### 🚀 What I've Built
+
+**[Open Classroom](https://openclassroom.online)** — AI classroom platform that turns any topic, PDF, or URL into a live multi-agent learning experience in 60 seconds. 4 AI agents lecture, debate, quiz, and draw in real time. Live with paying users.
+
+**[Claim It](https://claimit.shop)** — AI assistant helping Indian policyholders file insurance claims via WhatsApp and voice in Hindi/English. Built full multi-agent MVP.
+
+---
+
+### 🛠️ Stack
+
+Python • FastAPI • React • Google Gemini • Multi-agent AI • WhatsApp API • Zapier • SQL • MATLAB/Simulink
+
+---
+
+### 📬 Connect
+
+[LinkedIn](https://linkedin.com/in/siddharth-j-246525201) • [Open Classroom](https://openclassroom.online) • [Claim It](https://claimit.shop)
