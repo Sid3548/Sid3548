@@ -30,7 +30,7 @@ Real substation automation work; extends open-source IEC 61850 stack.
 One-piece 3D-printed relay panel wire clamp/splitter. Designed in Fusion 360.  
 Addresses a mechanical assembly problem in relay panels. IP filing in progress.
 
-**[Open Classroom](https://openclassroom.online)**  
+**[Open Classroom](https://openclassroom.online)** — [repo](https://github.com/Sid3548/openclassroom-open)  
 Multi-agent AI teaching system. 4 specialized agents (professor, TA, student, debater)  
 with shared state, live whiteboard, voice narration, and real-time quizzes.  
 BYOK architecture across Claude, GPT-4o, Gemini. Live with users.
@@ -39,10 +39,9 @@ BYOK architecture across Claude, GPT-4o, Gemini. Live with users.
 Personal research tool — feeds a STEM paper, returns interactive figures and  
 step-by-step guided walkthroughs via Gemini. Built for my own research workflow.
 
-**t3code Router**  
+**[Conductor](https://github.com/Sid3548/conductor)** — [t3code fork](https://github.com/Sid3548/t3code)  
 Auto-router over Claude Code, Codex, and Gemini CLIs. Classifies tasks by type,  
 routes to the best-fit agent, handles approval policies and loop guards.  
-Fork of pingdotgg/t3code.
 
 **[Claim It](https://claimit.shop)**  
 AI-native insurance claims via WhatsApp + voice (Hindi/English).  
@@ -50,6 +49,13 @@ AI-native insurance claims via WhatsApp + voice (Hindi/English).
 Architecture complete; paused pending regulatory licensing.
 
 ---
+
+**[Wire-tracer](https://github.com/Sid3548/Wire-tracer)**  
+Automated wire-reading tool for electrical engineering drawings —  
+extracts and processes wire connectivity from schematics.
+
+**[SLM](https://github.com/Sid3548/SLM-)** — Small Language Model  
+Built a small language model from scratch. Foundational ML implementation.
 
 ## Stack
 
