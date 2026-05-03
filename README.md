@@ -21,9 +21,10 @@ forgetting mitigation, quantization-aware training, and resource-constrained dep
 
 ## Projects
 
-**IEC 61850 Tooling**  
-Built software tooling around IEC 61850 (GOOSE/MMS) for substation automation —  
-bridging protocol-level relay coordination with software-layer configuration and testing.
+**IEC 61850 DR Processor** — [libiec61850 fork](https://github.com/Sid3548/libiec61850)  
+Built automatic Disturbance Record processing on top of libiec61850 — when a protective  
+relay trip event occurs, tool captures and processes oscillography DR data automatically.  
+Real substation automation work; extends open-source IEC 61850 stack.
 
 **Wire Clamp Connector — Patent Pending**  
 One-piece 3D-printed relay panel wire clamp/splitter. Designed in Fusion 360.  
