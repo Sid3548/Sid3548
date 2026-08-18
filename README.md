@@ -1,83 +1,55 @@
-# Siddharth Janapareddy
+# Hi, I'm Siddharth 👋
 
-**Electrical & Computer Engineer · Edge AI · Hyderabad**
+🔌➡️🧠 Recovering power-systems engineer, currently teaching very small computers to have opinions.
 
-Working at the intersection of embedded systems and machine learning.  
-EE background in power systems and industrial automation;  
-CS work in multi-agent AI, edge inference, and developer tooling.  
-Research direction: continual learning on microcontrollers for fault detection.
+My day job is wiring up substations — relays, IEC 61850, the kind of hardware that trips a breaker if you look at it wrong. Then I found out you can fit a neural network on a chip smaller than a coin, and I have not been the same since. So now I'm learning **embedded AI / TinyML in public**, one confused commit at a time.
 
----
+> Recent achievement: trained a 2,113-parameter neural net to spot a faulty signal. Its only real mistake was occasionally calling a broken thing "normal." Honestly? Relatable.
 
-## Research Interests
-
-**On-Device Continual Learning**  
-Investigating incremental learning on MCU-class hardware (Cortex-M, RISC-V) for  
-electrical fault detection — without cloud round-trips. Focus areas: catastrophic  
-forgetting mitigation, quantization-aware training, and resource-constrained deployment.  
-*Planned master's thesis direction.*
+I'm not the 10x-from-scratch-kernel-hacker type and I've stopped pretending to be — I'm a domain nerd who ships things, breaks them, and reads the traceback out loud like it owes me money. It's working out better than the pretending did.
 
 ---
 
-## Projects
+## 🧪 Things I've built (and what I learned by breaking them)
 
-**IEC 61850 DR Processor** — [libiec61850 fork](https://github.com/Sid3548/libiec61850)  
-Built automatic Disturbance Record processing on top of libiec61850 — when a protective  
-relay trip event occurs, tool captures and processes oscillography DR data automatically.  
-Real substation automation work; extends open-source IEC 61850 stack.
+⚡ **[esp32-signal-fault-mlp](https://github.com/Sid3548/esp32-signal-fault-mlp)** — *the new one I'm actually proud of*
+Taught a ~2 KB neural net to tell a healthy sine wave from a sick one, squished it to int8 so it fits on an ESP32, and ran it in [Wokwi](https://wokwi.com) because I respect real hardware too much to let the magic smoke out. Honest artifact, synthetic data, zero hype — I even documented the part where it's *simulated* instead of quietly hoping nobody asks.
 
-**Wire Clamp Connector — Patent Pending**  
-One-piece 3D-printed relay panel wire clamp/splitter. Designed in Fusion 360.  
-Addresses a mechanical assembly problem in relay panels. IP filing in progress.
+🔋 **IEC 61850 DR Processor** — [libiec61850 fork](https://github.com/Sid3548/libiec61850)
+When a protective relay trips, this grabs and processes the disturbance-record oscillography automatically. Real substation automation, real "please don't crash during a fault" energy.
 
-**[Open Classroom](https://openclassroom.online)** — [repo](https://github.com/Sid3548/openclassroom-open)  
-Multi-agent AI teaching system. 4 specialized agents (professor, TA, student, debater)  
-with shared state, live whiteboard, voice narration, and real-time quizzes.  
-BYOK architecture across Claude, GPT-4o, Gemini. Live with users.
+🎓 **[Open Classroom](https://openclassroom.online)** — [repo](https://github.com/Sid3548/openclassroom-open)
+A multi-agent AI classroom: a professor, a TA, a student, and a debater arguing on a live whiteboard. Bring-your-own-key across Claude / GPT / Gemini. Somehow live, with actual users.
 
-**Interactive Paper Reader**  
-Personal research tool — feeds a STEM paper, returns interactive figures and  
-step-by-step guided walkthroughs via Gemini. Built for my own research workflow.
+🧭 **[Conductor](https://github.com/Sid3548/conductor)** — [t3code fork](https://github.com/Sid3548/t3code)
+An auto-router over Claude Code, Codex, and Gemini CLIs. Basically: I built a manager so my AI agents could have a manager, because I clearly have unresolved delegation issues.
 
-**[Conductor](https://github.com/Sid3548/conductor)** — [t3code fork](https://github.com/Sid3548/t3code)  
-Auto-router over Claude Code, Codex, and Gemini CLIs. Classifies tasks by type,  
-routes to the best-fit agent, handles approval policies and loop guards.  
+🔧 **Wire Clamp Connector — patent pending**
+A one-piece 3D-printed relay-panel wire clamp, designed in Fusion 360, solving a genuinely annoying mechanical problem. Yes, an ML guy filed a hardware patent. No, I won't stop bringing it up.
 
-**[Claim It](https://claimit.shop)**  
-AI-native insurance claims via WhatsApp + voice (Hindi/English).  
-3-agent pipeline: process scraping → FastAPI backend → React/Tailwind frontend.  
-Architecture complete; paused pending regulatory licensing.
+<sub>🪦 Also in the drawer: [Claim It](https://claimit.shop) (AI insurance claims over WhatsApp, paused on regulation), [Wire-tracer](https://github.com/Sid3548/Wire-tracer), an [Interactive Paper Reader](https://github.com/Sid3548), and a [very small, frequently confused language model](https://github.com/Sid3548/SLM-) I built from scratch to understand what everyone else was talking about.</sub>
 
 ---
 
-**[Wire-tracer](https://github.com/Sid3548/Wire-tracer)**  
-Automated wire-reading tool for electrical engineering drawings —  
-extracts and processes wire connectivity from schematics.
+## 🛠️ Stack, sorted by emotional stability
 
-**[SLM](https://github.com/Sid3548/SLM-)** — Small Language Model  
-Built a small language model from scratch. Foundational ML implementation.
-
-## Stack
-
-**Embedded / Power Systems** — IEC 61850 (GOOSE/MMS) · Modbus TCP/RTU · BESS ·  
-Control & relay panel design · MATLAB/Simulink  
-**Edge AI / ML** — TinyML · on-device inference · quantization · continual learning  
-**AI Systems** — Multi-agent orchestration · LLM APIs (Claude · GPT-4o · Gemini) ·  
-RAG · prompt engineering  
-**Software** — Python · FastAPI · TypeScript · React · Tailwind · Bun  
-**Tools** — Git · Vercel · Linux · Fusion 360 · Claude Code  
+**Things I trust:** Python · IEC 61850 (GOOSE/MMS) · Modbus · MATLAB/Simulink · Fusion 360
+**Things I'm learning (loudly):** PyTorch · TinyML · quantization · embedded C · on-device inference
+**Things I glue together at 2am:** FastAPI · React · Tailwind · Bun · multi-agent LLM pipelines
+**Things that fully trust me:** the compiler, and even then only sometimes
 
 ---
 
-## Background
+## 🎓 The serious paragraph (hi Mom)
 
-B.Tech Electrical & Electronics Engineering — VNR VJIET, Hyderabad (GPA 8.25/10)  
-Foundation Certificate in Data Science — IIT Madras  
-Control & Relay Panel Designer / Automation Engineer — Toshiba TTDI  
-Applying for MS in Electrical Engineering & Computer Science — Fall 2027  
+- **B.Tech, Electrical & Electronics** — VNR VJIET, Hyderabad (8.25/10, a number I mention more often than strictly necessary)
+- **Control & Relay Panel Engineer** — Toshiba TTDI · substation automation, BESS, IEC 61850
+- **Data Science Foundation** — IIT Madras
+- **Next:** applying for an MS in embedded / edge AI (Europe, ~Fall 2027) — the long-game goal is building efficient AI for constrained hardware, ideally at my own company someday
 
 ---
 
-## Connect
+## 📫 Say hi
+[LinkedIn](https://linkedin.com/in/siddharth-j-246525201) · [Open Classroom](https://openclassroom.online) · or right here, mostly confused but always committing
 
-[LinkedIn](https://linkedin.com/in/siddharth-j-246525201) · [Open Classroom](https://openclassroom.online)
+<sub><i>currently: professionally puzzled by a microcontroller near you.</i></sub>
