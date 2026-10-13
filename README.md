@@ -12,33 +12,31 @@ Next: master's in robotics / ECE, Fall 2027. I don't want to do the same old thi
 
 ---
 
-## Papers
+## Papers & experiments
 
 - **An Assurance Is Not Evidence: Answerability Claims Change What Agents Assert** — tells an LLM agent "this is answerable" and measures how it starts asserting unsupported answers instead of abstaining. *Being submitted to an AAAI 2027 workshop.*
 - **[Decomposed Swarm Fusion (DSF): A Hypothesis for Multi-Axis Conceptual Fidelity Through Functionally Specialized Lightweight Networks](https://zenodo.org/records/20360400)** — single-author hypothesis paper. Instead of one big model holding every axis of meaning, a swarm of small specialised networks sharing one latent space. Predictions + falsification criteria, no experiments yet. Zenodo preprint, DOI [10.5281/zenodo.20360400](https://doi.org/10.5281/zenodo.20360400).
-- **Capability degradation mapping** — [code](https://github.com/Sid3548/capability-relationship-map). Remove MLP neurons from a small language model task by task: when does a capability fall off a cliff, and what breaks along with it? Pilot + v2 done, write-up paused.
+- **[Capability degradation mapping](https://github.com/Sid3548/capability-relationship-map)** — experiment. Remove MLP neurons from a small language model task by task: when does a capability fall off a cliff, and what breaks along with it? Pilot + v2 done, write-up paused.
+- **[esp32-signal-fault-mlp](https://github.com/Sid3548/esp32-signal-fault-mlp)** — experiment. ~2 KB int8 neural net that tells a healthy signal from a faulty one on an ESP32. Simulated in Wokwi, synthetic data, and it says so.
+- **[SLM-](https://github.com/Sid3548/SLM-)** — experiment. Built a small language model from scratch, just to see what everyone was talking about.
 
 ## Things I've built
 
-**At Toshiba / power systems**
-- **[DR Collector — IEC 61850](https://github.com/Sid3548/libiec61850)** — Toshiba wanted a cheaper in-house disturbance recorder instead of buying one. Task landed on me. Built it in C on libIEC61850: relay trips, stores the record, the workstation pulls the COMTRADE files over MMS automatically, with reconnect handling.
-- **[Wire-tracer](https://github.com/Sid3548/Wire-tracer)** — phase one of automating our cable schedules: read the wiring straight out of the PDF drawings instead of tracing it by hand.
-- **AI agent at work** — asks an engineer when it's unsure instead of inventing an answer. That rule had to be built in; rechecking everything yourself is doing the whole problem again. (Internal, can't share.)
-- **CONNECTOR-02** — one-piece wire-clamp connector for relay panels, designed in Fusion 360. Indian provisional patent filed May 2026.
+**Work projects**
+- **[DR Collector — IEC 61850](https://github.com/Sid3548/libiec61850)** — needed a cheaper in-house disturbance recorder instead of buying one. Built it in C on libIEC61850: relay trips, stores the record, the workstation pulls the COMTRADE files over MMS automatically, with reconnect handling.
+- **[Wire-tracer](https://github.com/Sid3548/Wire-tracer)** — phase one of automating cable schedules: read the wiring straight out of the PDF drawings instead of tracing it by hand.
+- **AI agent** — asks an engineer when it's unsure instead of inventing an answer. That rule had to be built in; rechecking everything yourself is doing the whole problem again. (Internal, can't share.)
 
-**Embedded AI**
-- **[esp32-signal-fault-mlp](https://github.com/Sid3548/esp32-signal-fault-mlp)** — ~2 KB int8 neural net that tells a healthy signal from a faulty one on an ESP32. Simulated in Wokwi, synthetic data, and it says so.
-
-**Learning the internals**
-- **[ARENA](https://github.com/Sid3548/ARENA_materials)** — working through the interpretability curriculum. Own ResNet-34 matches torchvision's predictions; transformers next.
-- **[SLM-](https://github.com/Sid3548/SLM-)** — built a small language model from scratch, just to see what everyone was talking about.
-
-**Other stuff**
+**My own**
+- **CONNECTOR-02** — my invention: a one-piece wire-clamp connector for relay panels, designed in Fusion 360. Indian provisional patent filed May 2026, in my name.
 - **[Conductor](https://github.com/Sid3548/conductor)** — routes my work between Claude Code, Codex and Gemini CLIs depending on the task.
 - **[GeoOSINT-GLOBE](https://github.com/Sid3548/GeoOSINT-GLOBE)** — side project: 3D globe with seven live feeds — satellites, aircraft, ships, earthquakes, wildfires, weather, cameras.
 - **[PDF-Studio](https://github.com/Sid3548/PDF-Studio)** — PDF editor in Flask, with tests.
 - **[event-intel](https://github.com/Sid3548/event-intel)** — for capturing contacts and notes at conferences.
 - **[Open Classroom](https://github.com/Sid3548/openclassroom-open)** — multi-agent AI classroom from a PDF or a topic.
+
+**Learning the internals**
+- **[ARENA](https://github.com/Sid3548/ARENA_materials)** — working through the interpretability curriculum. Own ResNet-34 matches torchvision's predictions; transformers next.
 
 ---
 
