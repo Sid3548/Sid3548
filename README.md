@@ -1,55 +1,57 @@
-# Hi, I'm Siddharth 👋
+# Siddharth Janapareddy
 
-🔌➡️🧠 Recovering power-systems engineer, currently teaching very small computers to have opinions.
+**Control System Engineer at Toshiba · robust AI for robots and embedded systems**
 
-My day job is wiring up substations — relays, IEC 61850, the kind of hardware that trips a breaker if you look at it wrong. Then I found out you can fit a neural network on a chip smaller than a coin, and I have not been the same since. So now I'm learning **embedded AI / TinyML in public**, one confused commit at a time.
+One question runs through my work: *when a system meets something it has never seen, how should it act?*
+At Toshiba I built an AI agent that asks an engineer when it is unsure instead of guessing. On my own I study why models behave as they do (mechanistic interpretability) and how small models run on embedded hardware, where there is no cloud to fall back on. Next: a master's in robotics / ECE (Fall 2027), because a robot cannot stop to ask — it still has to act.
 
-> Recent achievement: trained a 2,113-parameter neural net to spot a faulty signal. Its only real mistake was occasionally calling a broken thing "normal." Honestly? Relatable.
-
-I'm not the 10x-from-scratch-kernel-hacker type and I've stopped pretending to be — I'm a domain nerd who ships things, breaks them, and reads the traceback out loud like it owes me money. It's working out better than the pretending did.
-
----
-
-## 🧪 Things I've built (and what I learned by breaking them)
-
-⚡ **[esp32-signal-fault-mlp](https://github.com/Sid3548/esp32-signal-fault-mlp)** — *the new one I'm actually proud of*
-Taught a ~2 KB neural net to tell a healthy sine wave from a sick one, squished it to int8 so it fits on an ESP32, and ran it in [Wokwi](https://wokwi.com) because I respect real hardware too much to let the magic smoke out. Honest artifact, synthetic data, zero hype — I even documented the part where it's *simulated* instead of quietly hoping nobody asks.
-
-🔋 **IEC 61850 DR Processor** — [libiec61850 fork](https://github.com/Sid3548/libiec61850)
-When a protective relay trips, this grabs and processes the disturbance-record oscillography automatically. Real substation automation, real "please don't crash during a fault" energy.
-
-🎓 **[Open Classroom](https://openclassroom.online)** — [repo](https://github.com/Sid3548/openclassroom-open)
-A multi-agent AI classroom: a professor, a TA, a student, and a debater arguing on a live whiteboard. Bring-your-own-key across Claude / GPT / Gemini. Somehow live, with actual users.
-
-🧭 **[Conductor](https://github.com/Sid3548/conductor)** — [t3code fork](https://github.com/Sid3548/t3code)
-An auto-router over Claude Code, Codex, and Gemini CLIs. Basically: I built a manager so my AI agents could have a manager, because I clearly have unresolved delegation issues.
-
-🔧 **Wire Clamp Connector — patent pending**
-A one-piece 3D-printed relay-panel wire clamp, designed in Fusion 360, solving a genuinely annoying mechanical problem. Yes, an ML guy filed a hardware patent. No, I won't stop bringing it up.
-
-<sub>🪦 Also in the drawer: [Claim It](https://claimit.shop) (AI insurance claims over WhatsApp, paused on regulation), [Wire-tracer](https://github.com/Sid3548/Wire-tracer), an [Interactive Paper Reader](https://github.com/Sid3548), and a [very small, frequently confused language model](https://github.com/Sid3548/SLM-) I built from scratch to understand what everyone else was talking about.</sub>
+[Website](https://siddharth-j.com) · [LinkedIn](https://linkedin.com/in/siddharth-j-246525201)
 
 ---
 
-## 🛠️ Stack, sorted by emotional stability
+## Projects
 
-**Things I trust:** Python · IEC 61850 (GOOSE/MMS) · Modbus · MATLAB/Simulink · Fusion 360
-**Things I'm learning (loudly):** PyTorch · TinyML · quantization · embedded C · on-device inference
-**Things I glue together at 2am:** FastAPI · React · Tailwind · Bun · multi-agent LLM pipelines
-**Things that fully trust me:** the compiler, and even then only sometimes
+### Research & interpretability
+| Project | What it is |
+|---|---|
+| [capability-relationship-map](https://github.com/Sid3548/capability-relationship-map) | How far can you remove MLP neurons from a small language model before a capability breaks — and what happens to the other capabilities when you do? Task-conditioned ablation experiment. |
+| [DSF — Decomposed Swarm Fusion](https://zenodo.org/records/20360400) | Single-author hypothesis paper (Zenodo, DOI 10.5281/zenodo.20360400): a swarm of small, functionally specialised networks sharing one latent space, with testable predictions and falsification criteria. |
+| [ARENA_materials](https://github.com/Sid3548/ARENA_materials) | Working through the ARENA curriculum — tensors, CNNs/ResNets (own ResNet-34 matching torchvision), then transformers and interpretability. |
+| [SLM-](https://github.com/Sid3548/SLM-) | A small language model built from scratch to understand the internals. |
+
+### Embedded AI / TinyML
+| Project | What it is |
+|---|---|
+| [esp32-signal-fault-mlp](https://github.com/Sid3548/esp32-signal-fault-mlp) | ~2 KB int8 neural network that tells healthy signals from faulty ones on an ESP32 (simulated in Wokwi; synthetic data, documented as such). |
+
+### Power systems & industrial automation
+| Project | What it is |
+|---|---|
+| [DR Collector — libiec61850](https://github.com/Sid3548/libiec61850) | C tool on libIEC61850/MMS that subscribes to relay reports and automatically downloads COMTRADE disturbance records, with reconnect handling. |
+| [Wire-tracer](https://github.com/Sid3548/Wire-tracer) | Reads and traces wiring in electrical engineering drawings (PDF), automating manual wire reading. |
+| **CONNECTOR-02** (patent) | One-piece wire-clamp connector for relay panels, designed in Fusion 360. Indian provisional patent application filed May 2026. |
+
+### AI agents & software
+| Project | What it is |
+|---|---|
+| [Conductor](https://github.com/Sid3548/conductor) | Orchestrator that routes tasks between Claude Code, Codex and Gemini CLIs by task type. |
+| [GeoOSINT-GLOBE](https://github.com/Sid3548/GeoOSINT-GLOBE) | Real-time 3D globe fusing seven live feeds (satellites, aircraft, ships, earthquakes, wildfires, weather, cameras). React, FastAPI, PostGIS, TimescaleDB, CesiumJS. |
+| [PDF-Studio](https://github.com/Sid3548/PDF-Studio) | Flask PDF editor: interactive text editing, page operations, conversion, security tools, automated tests. |
+| [event-intel](https://github.com/Sid3548/event-intel) | Captures contacts, notes and insights at conferences. Next.js. |
+| [Open Classroom](https://github.com/Sid3548/openclassroom-open) | Multi-agent AI classroom generated from PDFs or topics (professor, TA, students on a shared whiteboard). |
+
+<sub>Private: native SwiftUI health tracker with an on-device food model; interactive paper reader that turns static paper figures into interactive ones.</sub>
 
 ---
 
-## 🎓 The serious paragraph (hi Mom)
+## Experience
+- **Toshiba (TTDI), Hyderabad** — Control System Engineer, *Sep 2025 – present*: substation automation system (SAS) architecture, control & relay panels, IEC 61850; the department's go-to person for trying new AI tools. Joined May 2025 in Transformers; moved to SAS after placing second in an internal ideation competition on digital substation monitoring.
+- **Accenture** — Associate Software Engineer, *Oct 2024 – Mar 2025*.
+- **Advance Auto Parts India** — IT Intern, *2024*: CTGAN-based synthetic data framework with a Streamlit front end.
 
-- **B.Tech, Electrical & Electronics** — VNR VJIET, Hyderabad (8.25/10, a number I mention more often than strictly necessary)
-- **Control & Relay Panel Engineer** — Toshiba TTDI · substation automation, BESS, IEC 61850
-- **Data Science Foundation** — IIT Madras
-- **Next:** applying for an MS in embedded / edge AI (Europe, ~Fall 2027) — the long-game goal is building efficient AI for constrained hardware, ideally at my own company someday
+## Tools
+Python · PyTorch · C (embedded, int8 inference) · IEC 61850 (MMS/GOOSE) · Modbus · MATLAB/Simulink · Fusion 360 · TypeScript / React / Next.js · FastAPI · PostgreSQL
 
----
-
-## 📫 Say hi
-[LinkedIn](https://linkedin.com/in/siddharth-j-246525201) · [Open Classroom](https://openclassroom.online) · or right here, mostly confused but always committing
-
-<sub><i>currently: professionally puzzled by a microcontroller near you.</i></sub>
+## Education
+- **B.Tech, Electrical & Electronics Engineering** — VNR VJIET, Hyderabad (2024) · CGPA 8.25/10 · First Class with Distinction
+- **IIT Madras** — BS in Data Science, Foundation level
