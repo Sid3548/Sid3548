@@ -1,57 +1,52 @@
-# Siddharth Janapareddy
+# Hi, I'm Siddharth
 
-**Control System Engineer at Toshiba · robust AI for robots and embedded systems**
+Control System Engineer at Toshiba. Electrical engineer by degree, wrote a lot of software, came back to hardware, then fell into interpretability. Robotics is where it all meets.
 
-One question runs through my work: *when a system meets something it has never seen, how should it act?*
-At Toshiba I built an AI agent that asks an engineer when it is unsure instead of guessing. On my own I study why models behave as they do (mechanistic interpretability) and how small models run on embedded hardware, where there is no cloud to fall back on. Next: a master's in robotics / ECE (Fall 2027), because a robot cannot stop to ask — it still has to act.
+Everything I've done keeps circling one problem: **if a model hasn't seen something before, how will it act?** That's all. It's a very simple problem.
+
+You can't teach a model every single situation. A chatbot can say "I don't know". A robot can't — it has to do *something*. And the models that end up in robots won't be calling a cloud and waiting for an answer; they'll be small, sitting on the hardware, with very little compute to check themselves. That's the part I want to work on: embedded software, embedded hardware, and models that behave safely and predictably on stuff they were never trained on.
+
+Next: master's in robotics / ECE, Fall 2027. I don't want to do the same old thing again and again. I want to understand systems and build new ones.
 
 [Website](https://siddharth-j.com) · [LinkedIn](https://linkedin.com/in/siddharth-j-246525201)
 
 ---
 
-## Projects
+## Papers
 
-### Research & interpretability
-| Project | What it is |
-|---|---|
-| [capability-relationship-map](https://github.com/Sid3548/capability-relationship-map) | How far can you remove MLP neurons from a small language model before a capability breaks — and what happens to the other capabilities when you do? Task-conditioned ablation experiment. |
-| [DSF — Decomposed Swarm Fusion](https://zenodo.org/records/20360400) | Single-author hypothesis paper (Zenodo, DOI 10.5281/zenodo.20360400): a swarm of small, functionally specialised networks sharing one latent space, with testable predictions and falsification criteria. |
-| [ARENA_materials](https://github.com/Sid3548/ARENA_materials) | Working through the ARENA curriculum — tensors, CNNs/ResNets (own ResNet-34 matching torchvision), then transformers and interpretability. |
-| [SLM-](https://github.com/Sid3548/SLM-) | A small language model built from scratch to understand the internals. |
+- **An Assurance Is Not Evidence: Answerability Claims Change What Agents Assert** — tells an LLM agent "this is answerable" and measures how it starts asserting unsupported answers instead of abstaining. *Being submitted to an AAAI 2027 workshop.*
+- **[Decomposed Swarm Fusion (DSF): A Hypothesis for Multi-Axis Conceptual Fidelity Through Functionally Specialized Lightweight Networks](https://zenodo.org/records/20360400)** — single-author hypothesis paper. Instead of one big model holding every axis of meaning, a swarm of small specialised networks sharing one latent space. Predictions + falsification criteria, no experiments yet. Zenodo preprint, DOI [10.5281/zenodo.20360400](https://doi.org/10.5281/zenodo.20360400).
+- **Capability degradation mapping** — [code](https://github.com/Sid3548/capability-relationship-map). Remove MLP neurons from a small language model task by task: when does a capability fall off a cliff, and what breaks along with it? Pilot + v2 done, write-up paused.
 
-### Embedded AI / TinyML
-| Project | What it is |
-|---|---|
-| [esp32-signal-fault-mlp](https://github.com/Sid3548/esp32-signal-fault-mlp) | ~2 KB int8 neural network that tells healthy signals from faulty ones on an ESP32 (simulated in Wokwi; synthetic data, documented as such). |
+## Things I've built
 
-### Power systems & industrial automation
-| Project | What it is |
-|---|---|
-| [DR Collector — libiec61850](https://github.com/Sid3548/libiec61850) | C tool on libIEC61850/MMS that subscribes to relay reports and automatically downloads COMTRADE disturbance records, with reconnect handling. |
-| [Wire-tracer](https://github.com/Sid3548/Wire-tracer) | Reads and traces wiring in electrical engineering drawings (PDF), automating manual wire reading. |
-| **CONNECTOR-02** (patent) | One-piece wire-clamp connector for relay panels, designed in Fusion 360. Indian provisional patent application filed May 2026. |
+**At Toshiba / power systems**
+- **[DR Collector — IEC 61850](https://github.com/Sid3548/libiec61850)** — Toshiba wanted a cheaper in-house disturbance recorder instead of buying one. Task landed on me. Built it in C on libIEC61850: relay trips, stores the record, the workstation pulls the COMTRADE files over MMS automatically, with reconnect handling.
+- **[Wire-tracer](https://github.com/Sid3548/Wire-tracer)** — phase one of automating our cable schedules: read the wiring straight out of the PDF drawings instead of tracing it by hand.
+- **AI agent at work** — asks an engineer when it's unsure instead of inventing an answer. That rule had to be built in; rechecking everything yourself is doing the whole problem again. (Internal, can't share.)
+- **CONNECTOR-02** — one-piece wire-clamp connector for relay panels, designed in Fusion 360. Indian provisional patent filed May 2026.
 
-### AI agents & software
-| Project | What it is |
-|---|---|
-| [Conductor](https://github.com/Sid3548/conductor) | Orchestrator that routes tasks between Claude Code, Codex and Gemini CLIs by task type. |
-| [GeoOSINT-GLOBE](https://github.com/Sid3548/GeoOSINT-GLOBE) | Real-time 3D globe fusing seven live feeds (satellites, aircraft, ships, earthquakes, wildfires, weather, cameras). React, FastAPI, PostGIS, TimescaleDB, CesiumJS. |
-| [PDF-Studio](https://github.com/Sid3548/PDF-Studio) | Flask PDF editor: interactive text editing, page operations, conversion, security tools, automated tests. |
-| [event-intel](https://github.com/Sid3548/event-intel) | Captures contacts, notes and insights at conferences. Next.js. |
-| [Open Classroom](https://github.com/Sid3548/openclassroom-open) | Multi-agent AI classroom generated from PDFs or topics (professor, TA, students on a shared whiteboard). |
+**Embedded AI**
+- **[esp32-signal-fault-mlp](https://github.com/Sid3548/esp32-signal-fault-mlp)** — ~2 KB int8 neural net that tells a healthy signal from a faulty one on an ESP32. Simulated in Wokwi, synthetic data, and it says so.
 
-<sub>Private: native SwiftUI health tracker with an on-device food model; interactive paper reader that turns static paper figures into interactive ones.</sub>
+**Learning the internals**
+- **[ARENA](https://github.com/Sid3548/ARENA_materials)** — working through the interpretability curriculum. Own ResNet-34 matches torchvision's predictions; transformers next.
+- **[SLM-](https://github.com/Sid3548/SLM-)** — built a small language model from scratch, just to see what everyone was talking about.
+
+**Other stuff**
+- **[Conductor](https://github.com/Sid3548/conductor)** — routes my work between Claude Code, Codex and Gemini CLIs depending on the task.
+- **[GeoOSINT-GLOBE](https://github.com/Sid3548/GeoOSINT-GLOBE)** — 3D globe with seven live feeds: satellites, aircraft, ships, earthquakes, wildfires, weather, cameras.
+- **[PDF-Studio](https://github.com/Sid3548/PDF-Studio)** — PDF editor in Flask, with tests.
+- **[event-intel](https://github.com/Sid3548/event-intel)** — for capturing contacts and notes at conferences.
+- **[Open Classroom](https://github.com/Sid3548/openclassroom-open)** — multi-agent AI classroom from a PDF or a topic.
 
 ---
 
-## Experience
-- **Toshiba (TTDI), Hyderabad** — Control System Engineer, *Sep 2025 – present*: substation automation system (SAS) architecture, control & relay panels, IEC 61850; the department's go-to person for trying new AI tools. Joined May 2025 in Transformers; moved to SAS after placing second in an internal ideation competition on digital substation monitoring.
-- **Accenture** — Associate Software Engineer, *Oct 2024 – Mar 2025*.
-- **Advance Auto Parts India** — IT Intern, *2024*: CTGAN-based synthetic data framework with a Streamlit front end.
+## How I got here
+- **Advance Auto Parts (intern, 2024)** — first time working with models for real. They couldn't get enough test data. We tried four or five GAN models for about 40 days, none worked, then changed the model itself and it clicked: CTGAN took 10,000 rows to 100,000 coherent ones.
+- **Accenture (Oct 2024 – Mar 2025)** — put in financial analysis. Not my thing. Left.
+- **Toshiba (May 2025 – now)** — joined in Transformers, came second in an internal ideation competition on digital substation monitoring, moved to control & relay panels / substation automation. SAS architecture, IEC 61850, a lot of talking to customers and vendors, and the guy who tries the new AI tools.
 
-## Tools
-Python · PyTorch · C (embedded, int8 inference) · IEC 61850 (MMS/GOOSE) · Modbus · MATLAB/Simulink · Fusion 360 · TypeScript / React / Next.js · FastAPI · PostgreSQL
+**Education:** B.Tech EEE, VNR VJIET Hyderabad, 2024 (8.25/10, First Class with Distinction) · IIT Madras BS Data Science, Foundation level
 
-## Education
-- **B.Tech, Electrical & Electronics Engineering** — VNR VJIET, Hyderabad (2024) · CGPA 8.25/10 · First Class with Distinction
-- **IIT Madras** — BS in Data Science, Foundation level
+**Tools:** Python · PyTorch · C · IEC 61850 (MMS/GOOSE) · Modbus · MATLAB/Simulink · Fusion 360 · TypeScript/React · FastAPI
