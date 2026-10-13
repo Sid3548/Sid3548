@@ -38,13 +38,13 @@ Next: master's in robotics / ECE, Fall 2027. I don't want to do the same old thi
 - **[PDF-Studio](https://github.com/Sid3548/PDF-Studio)** — PDF editor in Flask, with tests.
 - **[event-intel](https://github.com/Sid3548/event-intel)** — for capturing contacts and notes at conferences.
 - **[Open Classroom](https://github.com/Sid3548/openclassroom-open)** — multi-agent AI classroom from a PDF or a topic.
+- **APC Edutech** — side project: an education startup teaching Python and ML, between Accenture and Toshiba. Didn't work out.
 
 ---
 
 ## How I got here
 - **Advance Auto Parts (intern, 2024)** — first time working with models for real. They couldn't get enough test data. We tried four or five GAN models for about 40 days, none worked, then changed the model itself and it clicked: CTGAN took 10,000 rows to 100,000 coherent ones.
 - **Accenture (Oct 2024 – Mar 2025)** — put in financial analysis. Not my thing. Left.
-- **APC Edutech (co-founder, Mar – May 2025)** — education startup teaching Python and ML. It didn't work out, so I moved on.
 - **Toshiba (May 2025 – now)** — joined in Transformers, came second in an internal ideation competition on digital substation monitoring, moved to control & relay panels / substation automation. SAS architecture, IEC 61850, a lot of talking to customers and vendors, and the guy who tries the new AI tools.
 
 **Education:** B.Tech EEE, VNR VJIET Hyderabad, 2024 (8.25/10, First Class with Distinction) · IIT Madras BS Data Science, Foundation level
