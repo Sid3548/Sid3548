@@ -24,8 +24,7 @@ Next: master's in robotics / ECE, Fall 2027. I don't want to do the same old thi
 
 **Work projects**
 - **[DR Collector — IEC 61850](https://github.com/Sid3548/libiec61850)** — needed a cheaper in-house disturbance recorder instead of buying one. Built it in C on libIEC61850: relay trips, stores the record, the workstation pulls the COMTRADE files over MMS automatically, with reconnect handling.
-- **[Wire-tracer](https://github.com/Sid3548/Wire-tracer)** — phase one of automating cable schedules: read the wiring straight out of the PDF drawings instead of tracing it by hand.
-- **AI agent** — asks an engineer when it's unsure instead of inventing an answer. That rule had to be built in; rechecking everything yourself is doing the whole problem again. (Internal, can't share.)
+- **Wire tracer → cable schedules** — a model that traces wires through substation drawings and produces cable schedules, running on local hardware. A second model scores its confidence, and when it's unsure it asks an engineer instead of inventing an answer. That rule had to be built in; rechecking everything yourself is doing the whole problem again. (Internal, can't share.)
 
 **My own**
 - **CONNECTOR-02** — my invention: a one-piece wire-clamp connector for relay panels, designed in Fusion 360. Indian provisional patent filed May 2026, in my name.
@@ -41,7 +40,7 @@ Next: master's in robotics / ECE, Fall 2027. I don't want to do the same old thi
 ---
 
 ## How I got here
-- **Advance Auto Parts (intern, 2024)** — first time working with models for real. They couldn't get enough test data. We tried four or five GAN models for about 40 days, none worked, then changed the model itself and it clicked: CTGAN took 10,000 rows to 100,000 coherent ones.
+- **Advance Auto Parts (intern, 2024)** — first time working with models for real. They couldn't get enough test data. Expected a one-week job; it took six. CTGAN had no idea which values could repeat and which couldn't, so we built a rule layer on top of it: 10,000 rows in, 100,000 coherent ones out.
 - **Accenture (Oct 2024 – Mar 2025)** — put in financial analysis. Not my thing. Left.
 - **APC Edutech (co-founder, Mar – May 2025)** — education startup teaching Python and ML. It didn't work out, so I moved on.
 - **Toshiba (May 2025 – now)** — joined in Transformers, came second in an internal ideation competition on digital substation monitoring, moved to control & relay panels / substation automation. SAS architecture, IEC 61850, a lot of talking to customers and vendors, and the guy who tries the new AI tools.
